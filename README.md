@@ -7,6 +7,13 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 
 ## 목차
 
+- [1. AI Agent](#1-ai-agent)
+  - [1.1. AI Agent](#11-ai-agent)
+  - [1.2. Model](#12-model)
+  - [1.3. Context Window](#13-context-window)
+- [2. Claude Code](#2-claude-code)
+  - [2.1. Claude Code](#21-claude-code)
+
 ## 1. AI Agent
 
 ### 1.1. AI Agent
