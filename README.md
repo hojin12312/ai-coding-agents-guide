@@ -6,7 +6,10 @@ Claude Code, Pi, OpenCode 사용 가이드
 
 ## 목차
 
-### 1. AI Agent
-- 1.1. AI Agent
-- 1.2. Model
-- 1.3. Context Window
+## 1. AI Agent
+
+### 1.1. AI Agent
+
+### 1.2. Model
+
+### 1.3. Context Window
