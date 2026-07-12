@@ -26,7 +26,7 @@ LLM은 다시 Text-Only와 Multimodal LLM으로 나뉩니다.
 ### 1.3. Context Window
 Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 이 수용 한계는 토큰(token)의 숫자로 정의됩니다. 2026년 7월 기준 모델에 따라 다르며, 대표적인 수치로 128K, 256K, 1M 토큰 등이 있습니다.
 
-Context Window가 한계에 도달하면 "잘라내기, 요약, 제거" 등의 방법으로 대응해야 합니다.
+> *"Context Window가 한계에 도달하면 잘라내기(Truncation), 요약(Summarization), 제거(Eviction) 등의 방법으로 대응해야 합니다."*
 
 ## 2. Claude Code
 
