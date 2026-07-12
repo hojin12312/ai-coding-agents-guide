@@ -1,6 +1,6 @@
 # AI Coding Agents Guide
 
-Claude Code, Pi, OpenCode 사용 가이드
+Claude Code, Pi, OpenCode 폐쇄망 사용 가이드
 
 ---
 
