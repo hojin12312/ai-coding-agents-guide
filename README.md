@@ -46,13 +46,16 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 
 ### 2.2. 슬래시 명령어
 `/model  ` 모델을 변경합니다. (`GLM-5.2`, `Kimi-K2.7-Coder`, `Qwen3.5-397B-A17B`)
+
 `/rewind ` 선택한 과거 시점으로 회귀합니다. Claude Code가 Write, Edit 도구로 수정한 파일을 되돌릴지 선택할 수 있습니다.
+
 `/compact` 지금까지의 대화 내용을 요약합니다.
+
 `/clear  ` 지금까지의 대화 내용을 초기화합니다.
 
 `/tui    ` TUI 설정을 변경합니다.
 
+### 2.3. Skills
+`/frontend-design` 문서 작성 등 전반적인 디자인 개선
 
-
-
-
+`/dataviz` 표, 차트, 그래프 그리기
