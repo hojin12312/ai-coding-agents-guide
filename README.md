@@ -31,7 +31,7 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 ## 2. Claude Code
 
 ### 2.1. Claude Code
-우리 파트에서는 claude-adtco를 입력해서 실행 가능합니다. 2026년 7월 13일 기준 r71 버전 이하라면, claude-adtco --restart로 패치하거나, 실행중인 모든 Claude Code를 종료한 뒤, claude-adtco 입력 시 최신 버전으로 업데이트됩니다.
+우리 파트에서는 `claude-adtco`를 입력해서 실행 가능합니다. 2026년 7월 13일 기준 r71 버전 이하라면, `claude-adtco --restart`로 패치하거나, 실행중인 모든 Claude Code를 종료한 뒤, `claude-adtco` 입력 시 최신 버전으로 업데이트됩니다.
 
 세 에이전트 중 가장 복잡하고 정교합니다. 수많은 도구와 부가기능을 통해 모델의 작업을 돕습니다. 단, Anthropic 모델에 최적화되어 있으므로 서드파티 모델 사용 시 도구 사용 성공률이 낮아지며 일부 도구가 호환되지 않습니다.
 
