@@ -42,7 +42,7 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 
 세 에이전트 중 가장 복잡하고 정교합니다. 수많은 도구와 부가기능을 통해 모델의 작업을 돕습니다. 단, Anthropic 모델에 최적화되어 있으므로 서드파티 모델 사용 시 도구 사용 성공률이 낮아지며 일부 도구가 호환되지 않습니다.
 
-> *"`claude-adtco --restart 실행 시 종료된 세션은 해당 터미널에서 `claude-adtco -c`로 재개하면 됩니다."*
+> *"`claude-adtco --restart` 실행 시 종료된 세션은 해당 터미널에서 `claude-adtco -c`로 재개하면 됩니다."*
 
 ### 2.2. 슬래시 명령어
 `/model  ` 모델을 변경합니다. (`GLM-5.2`, `Kimi-K2.7-Coder`, `Qwen3.5-397B-A17B`)
