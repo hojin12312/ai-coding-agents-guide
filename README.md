@@ -60,3 +60,7 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 `/frontend-design` 문서 작성 등 전반적인 디자인 개선
 
 `/dataviz` 표, 차트, 그래프 그리기
+
+![Usage Monitor](assets/usage-monitor.png)
+
+![PICS-AI Dashboard](assets/pics-dashboard.png)
