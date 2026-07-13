@@ -15,13 +15,16 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
   - [2.1. Claude Code](#21-claude-code)
   - [2.2. 슬래시 명령어](#22-슬래시-명령어)
   - [2.3. Skills](#23-skills)
+  - [2.4. @ 참조와 CLAUDE.md](#24--참조와-claudemd)
 - [3. Pi](#3-pi)
   - [3.1. Pi](#31-pi)
   - [3.2. 슬래시 명령어](#32-슬래시-명령어)
   - [3.3. Skills](#33-skills)
+  - [3.4. @ 참조와 AGENTS.md](#34--참조와-agentsmd)
 - [4. OpenCode](#4-opencode)
   - [4.1. OpenCode](#41-opencode)
   - [4.2. 슬래시 명령어](#42-슬래시-명령어)
+  - [4.3. @ 참조와 AGENTS.md](#43--참조와-agentsmd)
 
 ## 1. AI Agent
 
@@ -75,6 +78,12 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 
 ![PICS-AI Dashboard](assets/pics-dashboard.png)
 
+### 2.4. @ 참조와 CLAUDE.md
+- 프롬프트에 `@`를 입력하면 파일·디렉토리를 퍼지 검색으로 참조할 수 있으며, 해당 내용이 컨텍스트에 포함됩니다.
+- 프로젝트 루트의 `CLAUDE.md`는 세션 시작 시 자동으로 로드되는 지침 파일입니다. 코딩 컨벤션, 자주 쓰는 명령어, 주의사항 등을 기록해두면 매 세션 반복 설명이 필요 없습니다.
+- 모든 프로젝트에 적용할 전역 지침은 `~/.claude/CLAUDE.md`에 둡니다.
+- `CLAUDE.md` 안에서 `@경로` 문법으로 다른 .md 파일을 불러올(import) 수 있습니다.
+
 ## 3. Pi
 
 ### 3.1. Pi
@@ -93,6 +102,12 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 ### 3.3. Skills
 `/skill:pi-subagents` 서브에이전트 호출
 
+### 3.4. @ 참조와 AGENTS.md
+- 프롬프트에 `@`를 입력하면 파일을 퍼지 검색으로 참조할 수 있습니다. (Claude Code의 `@` 참조와 유사)
+- 실행 시 `pi @파일 "질문"` 형태로 파일을 첨부할 수도 있습니다.
+- 지침 파일로 `AGENTS.md`를 로드하며, 없으면 `CLAUDE.md`를 대신 읽습니다. 현재 디렉토리 → 상위 디렉토리 → 전역(`~/.pi/agent/AGENTS.md`) 순으로 탐색합니다.
+- 지침 파일 수정 후에는 `/reload`를 실행하거나 Pi를 재시작해야 반영됩니다.
+
 ## 4. OpenCode
 
 ### 4.1. OpenCode
@@ -107,3 +122,8 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 `/compact` 지금까지의 대화 내용을 요약합니다. (Claude Code의 `/compact`와 유사)
 
 `/new    ` 지금까지의 대화 내용을 초기화합니다. (Claude Code의 `/clear`와 유사)
+
+### 4.3. @ 참조와 AGENTS.md
+- 프롬프트에 `@`를 입력하면 파일을 퍼지 검색으로 참조할 수 있습니다. (Claude Code의 `@` 참조와 유사)
+- 지침 파일로 프로젝트 루트의 `AGENTS.md`를 로드하며, 없으면 `CLAUDE.md`를 대신 읽습니다. (Claude Code에서 갈아탈 때 그대로 호환)
+- 모든 프로젝트에 적용할 전역 지침은 `~/.config/opencode/AGENTS.md`에 둡니다.
