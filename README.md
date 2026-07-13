@@ -100,4 +100,10 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 - OpenAI Compatible API와 호환되며, Pi보다 좀 더 다양한 기능을 포함한 코딩 에이전트입니다.
 
 ### 4.2. 슬래시 명령어
-`/model  ` 모델을 변경합니다.
+`/models ` 모델을 변경합니다. (Claude Code의 `/model`과 유사)
+
+`/undo   ` 마지막 메시지와 파일 변경을 되돌립니다. (Claude Code의 `/rewind`와 유사, `/redo`로 복구 가능)
+
+`/compact` 지금까지의 대화 내용을 요약합니다. (Claude Code의 `/compact`와 유사)
+
+`/new    ` 지금까지의 대화 내용을 초기화합니다. (Claude Code의 `/clear`와 유사)
