@@ -64,3 +64,25 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 ![Usage Monitor](assets/usage-monitor.png)
 
 ![PICS-AI Dashboard](assets/pics-dashboard.png)
+
+## 3. Pi
+
+### 3.1. Pi
+- Pi는 Read, Write, Edit, Bash 네 가지 도구만 기본으로 주어진 미니멀한 코딩 에이전트입니다.
+- 우리 파트에서는 `pi-adtco`로 실행 가능합니다.
+
+### 3.2. 슬래시 명령어
+/model 클로드 코드의 /model과 유사합니다
+/tree 클로드 코드의 /rewind와 유사합니다
+/new 클로드 코드의 /clear와 유사합니다
+/compact 클로드 코드의 /compact와 유사합니다
+
+## 4. OpenCode
+
+### 4.1. OpenCode
+- OpenCode는 OpenAI Compatible에 호환되며 Pi보다는 좀 더 다양한 기능을 포함한 코딩 에이전트입니다.
+- 우리 파트에서는 강화판인, Oh-My-OpenCode를 사용하고 있으며 `omo-adtco`로 실행 가능합니다.
+
+### 4.2. 슬래시 명령어
+/model
+...
