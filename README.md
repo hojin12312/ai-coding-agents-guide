@@ -13,6 +13,15 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
   - [1.3. Context Window](#13-context-window)
 - [2. Claude Code](#2-claude-code)
   - [2.1. Claude Code](#21-claude-code)
+  - [2.2. 슬래시 명령어](#22-슬래시-명령어)
+  - [2.3. Skills](#23-skills)
+- [3. Pi](#3-pi)
+  - [3.1. Pi](#31-pi)
+  - [3.2. 슬래시 명령어](#32-슬래시-명령어)
+  - [3.3. Skills](#33-skills)
+- [4. OpenCode](#4-opencode)
+  - [4.1. OpenCode](#41-opencode)
+  - [4.2. 슬래시 명령어](#42-슬래시-명령어)
 
 ## 1. AI Agent
 
@@ -31,7 +40,8 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 ![1.2. Model](assets/paste-20260713-084233.png)
 
 ### 1.3. Context Window
-Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 이 수용 한계는 토큰(token)의 숫자로 정의됩니다. (128K, 256K, 1M 등)
+- Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다.
+- 이 수용 한계는 토큰(token)의 숫자로 정의됩니다. (128K, 256K, 1M 등)
 
 > *"Context Window가 한계에 도달하면 잘라내기(Truncation), 요약(Summarization), 제거(Eviction) 등의 방법으로 대응해야 합니다."*
 
@@ -68,24 +78,26 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 ## 3. Pi
 
 ### 3.1. Pi
-- Pi는 Read, Write, Edit, Bash 네 가지 도구만 기본으로 주어진 미니멀한 코딩 에이전트입니다.
-- 우리 파트에서는 `pi-adtco`로 실행 가능합니다.
+- 우리 파트에서는 `pi-adtco`를 입력해서 실행 가능합니다.
+- `Read`, `Write`, `Edit`, `Bash` 네 가지 도구만 기본으로 주어진 미니멀한 코딩 에이전트입니다.
 
 ### 3.2. 슬래시 명령어
-/model 클로드 코드의 /model과 유사합니다
-/tree 클로드 코드의 /rewind와 유사합니다
-/new 클로드 코드의 /clear와 유사합니다
-/compact 클로드 코드의 /compact와 유사합니다
+`/model  ` 모델을 변경합니다. (Claude Code의 `/model`과 유사)
+
+`/tree   ` 선택한 과거 시점으로 회귀합니다. (Claude Code의 `/rewind`와 유사)
+
+`/compact` 지금까지의 대화 내용을 요약합니다. (Claude Code의 `/compact`와 유사)
+
+`/new    ` 지금까지의 대화 내용을 초기화합니다. (Claude Code의 `/clear`와 유사)
 
 ### 3.3. Skills
-/skill:pi-subagents 서브에이전트 호출을 위해 설치되어 있습니다
+`/skill:pi-subagents` 서브에이전트 호출
 
 ## 4. OpenCode
 
 ### 4.1. OpenCode
-- OpenCode는 OpenAI Compatible에 호환되며 Pi보다는 좀 더 다양한 기능을 포함한 코딩 에이전트입니다.
-- 우리 파트에서는 강화판인, Oh-My-OpenCode를 사용하고 있으며 `omo-adtco`로 실행 가능합니다.
+- 우리 파트에서는 강화판인 Oh-My-OpenCode를 사용하고 있으며, `omo-adtco`를 입력해서 실행 가능합니다.
+- OpenAI Compatible API와 호환되며, Pi보다 좀 더 다양한 기능을 포함한 코딩 에이전트입니다.
 
 ### 4.2. 슬래시 명령어
-/model
-...
+`/model  ` 모델을 변경합니다.
