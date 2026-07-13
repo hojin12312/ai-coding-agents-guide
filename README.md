@@ -67,7 +67,9 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 
 `/clear  ` 지금까지의 대화 내용을 초기화합니다.
 
-`/tui    ` TUI 설정을 변경합니다.
+`/tui    ` TUI 렌더러를 변경합니다. (`default`, `fullscreen`) `fullscreen` 적용 시 화면 깜빡임이 사라지고, 이전 대화로 스크롤할 때 텍스트가 깨지는 문제가 해결됩니다.
+
+> *"`fullscreen` 모드에서는 Claude Code가 마우스 이벤트를 직접 처리하므로, 터미널 자체의 텍스트 선택은 기존 드래그 대신 `Shift`+드래그로 해야 합니다. (일반 드래그는 Claude Code 내부 선택으로 동작하며, 마우스를 놓는 순간 자동으로 클립보드에 복사됩니다.)"*
 
 ### 2.3. Skills
 `/frontend-design` 문서 작성 등 전반적인 디자인 개선
