@@ -77,6 +77,9 @@ Model이 수용할 수 있는 내용(Context Window)은 한계가 있습니다. 
 /new 클로드 코드의 /clear와 유사합니다
 /compact 클로드 코드의 /compact와 유사합니다
 
+### 3.3. Skills
+/skill:pi-subagents 서브에이전트 호출을 위해 설치되어 있습니다
+
 ## 4. OpenCode
 
 ### 4.1. OpenCode
