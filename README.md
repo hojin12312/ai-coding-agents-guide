@@ -61,7 +61,7 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 ### 2.2. 슬래시 명령어
 `/model  ` 모델을 변경합니다. (`GLM-5.2`, `Kimi-K2.7-Coder`, `Qwen3.5-397B-A17B`)
 
-`/rewind ` 선택한 과거 시점으로 회귀합니다. Claude Code가 Write, Edit 도구로 수정한 파일을 되돌릴지 선택할 수 있습니다.
+`/rewind ` 선택한 과거 시점으로 회귀합니다. Claude Code가 Write, Edit 도구로 수정한 파일을 되돌릴지 선택할 수 있습니다. `Esc`를 빠르게 두 번 눌러 호출할 수도 있습니다.
 
 `/compact` 지금까지의 대화 내용을 요약합니다.
 
@@ -95,7 +95,7 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 ### 3.2. 슬래시 명령어
 `/model  ` 모델을 변경합니다. (Claude Code의 `/model`과 유사)
 
-`/tree   ` 선택한 과거 시점으로 회귀합니다. (Claude Code의 `/rewind`와 유사)
+`/tree   ` 선택한 과거 시점으로 회귀합니다. (Claude Code의 `/rewind`와 유사) Claude Code와 마찬가지로 `Esc`를 빠르게 두 번 눌러 호출할 수도 있습니다.
 
 `/compact` 지금까지의 대화 내용을 요약합니다. (Claude Code의 `/compact`와 유사)
 
@@ -119,7 +119,7 @@ Claude Code, Pi, OpenCode 가이드 (부서 폐쇄망 인프라 한정 설명, 2
 ### 4.2. 슬래시 명령어
 `/models ` 모델을 변경합니다. (Claude Code의 `/model`과 유사)
 
-`/undo   ` 마지막 메시지와 파일 변경을 되돌립니다. (Claude Code의 `/rewind`와 유사, `/redo`로 복구 가능)
+`/undo   ` 마지막 메시지와 파일 변경을 되돌립니다. (Claude Code의 `/rewind`와 유사, `/redo`로 복구 가능) 단, `Esc` 두 번 호출은 지원하지 않으며(`Esc`는 작업 중단 전용) 단축키는 `Ctrl+x` `u`입니다.
 
 `/compact` 지금까지의 대화 내용을 요약합니다. (Claude Code의 `/compact`와 유사)
 
